@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+
+*{
+    font-family: 'Poppins',sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.button{
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 1.1764805882;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    min-width: 28px;
+    padding: 8px 16px;
+    border-radius: 980px;
+    background: #0071e3;
+    color: #fff;
+}
+
+section{
+    padding: 1.5rem 0;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 13%;
+    background: #111;
+}
+
+.header .icons,
+.header .icons-sd{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.header .logo{
+    font-size: 1.8rem;
+    color: #cecece;
+}
+
+.header .navbar a:hover,
+.header .logo:hover{
+    color: #fff;
+    transition: none;
+}
+
+
+#menu-btn{
+    display: none;
+}
+
+.header .navbar a{
+    text-transform: none;
+    margin: 0 2.7rem;
+    font-size: 1.1rem;
+    color: #cecece;
+}
+
+.home{
+    padding-top: 9rem;
+    background: #fbfbfd;
+}
+
+.home .box-container{
+    align-items: center;
+    text-align: center;
+}
+
+.home .box-container .content h2{
+    font-size: 5.4rem;
+    line-height: 1;
+    font-weight:bold;
+    font-weight: 500;
+    text-transform: none;
+    color: #333;
+    padding-top: 3rem;
+}
+
+.home .box-container .content span{
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin-top: .6rem;
+    color: #333;
+}
+
+.home .box-container .content .link{
+    margin: 1.5rem 0 1.4rem 0;
+}
+
+.home .box-container .content .link .p-first,
+.home .box-container .content .link .p-second{
+    font-size: 1.9rem;
+    color: #06c;
+    text-transform: none;
+}
+
+.home .box-container .content .link .p-first:hover,
+.home .box-container .content .link .p-second:hover{
+    text-decoration: underline;
+}
+
+.home .box-container .content .link .p-second{
+    margin-left: 4rem;
+}
+
+.home .box-container .content .link i{
+    color: #2997ff;
+    font-size: 1.4rem;
+    padding-left: .3rem;
+}
+
+.home .image{
+    min-height: 60vh;
+    width: 57rem;
+    background-size: cover !important;
+    background-position:top ;
+    align-items: center;
+    margin: auto;
+}
+
+.home2{
+    background: #35283c;
+    align-items: center;
+    text-align: center;
+}
+
+.home2 .box-container {
+    width: 100%;
+    height: auto;
+}
+
+.home2 .box-container img{
+    width: 80rem;
+}
+
+.home2 .box-container .content{
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.home2 .box-container .content h2{
+    font-size: 5.6rem;
+    line-height: 1;
+    font-weight:bold;
+    font-weight: 450;
+    text-transform: none;
+    color: #fff;
+    padding-top: 2rem;
+}
+
+.home2 .box-container .content h3{
+    color: #fec2eb;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.home2 .box-container .content .link{
+    margin: 1.4rem 0px 2.8rem;
+}
+
+.home2 .box-container .content .link .p-first,
+.home2 .box-container .content .link .p-second{
+    font-size: 1.9rem;
+    color: #06c;
+    text-transform: none;
+}
+
+.home2 .box-container .content .link .p-first:hover,
+.home2 .box-container .content .link .p-second:hover{
+    text-decoration: underline;
+}
+
+.home2 .box-container .content .link .p-second{
+    margin-left: 4rem;
+}
+
+.home2 .box-container .content .link i{
+    color: #2997ff;
+    font-size: 1.4rem;
+    padding-left: .3rem;
+}
+
+.MAC .box-container{
+    background: #fbfbfd;
+    text-align: center;
+    background: url(../images/MAC.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 62.4rem;
+}
+
+.MAC .box-container .content{
+    padding-top: 6rem ;
+}
+
+.MAC .box-container .content h2{
+    font-size: 5.5rem;
+    font-weight: 500;
+} 
+
+.MAC .box-container .content h3{
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+.MAC .box-container .content .link{
+    margin: 1.4rem 0px 2.8rem;
+}
+
+.MAC .box-container .content .link .p-first,
+.MAC .box-container .content .link .p-second{
+    font-size: 1.9rem;
+    color: #06c;
+    text-transform: none;
+}
+
+.MAC .box-container .content .link .p-first:hover,
+.MAC .box-container .content .link .p-second:hover{
+    text-decoration: underline;
+}
+
+.MAC .box-container .content .link .p-second{
+    margin-left: 4rem;
+}
+
+.MAC .box-container .content .link i{
+    color: #2997ff;
+    font-size: 1.4rem;
+    padding-left: .3rem;
+}
+
+
+
+/* responsive */
+@media (max-width: 991px) {
+    html {
+      font-size: 55%;
+      scroll-padding: 7rem;
+    }
+    .header {
+      padding: 0 2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    .home .slide {
+      padding: 2rem 5%;
+    }
+    .home .slide .content {
+      width: 50rem;
+    }
+    .home .slide .content h3 {
+      font-size: 4rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #menu-btn {
+      display: inline-block;
+    }
+
+    .header .logo{
+        justify-content: center;
+        margin: auto;
+    }
+
+    .header .icons-sd{
+        display: none;
+    }
+   
+    .header {
+      padding: 2rem;
+    }
+    .header .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: #000;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+      display: block;
+      font-size: 2rem;
+    }
+    
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+
+
+
