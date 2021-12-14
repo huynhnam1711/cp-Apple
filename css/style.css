@@ -41,7 +41,7 @@ body{
 }
 
 section{
-    padding: 1.5rem 0;
+    padding: 1rem 1% 0 1%;
 }
 
 .header{
@@ -50,21 +50,34 @@ section{
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: .8rem 13%;
     background: #111;
+    margin: 0 auto;
+    padding: 0 22px;
+    z-index: 2;
 }
 
-.header .icons,
+#menu-btn{
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+
 .header .icons-sd{
     font-size: 1.5rem;
     color: #fff;
+    padding: 1rem 0;
+}
+
+.header .icons-sd{
+    padding-left: 4rem;
 }
 
 .header .logo{
     font-size: 1.8rem;
     color: #cecece;
+    padding-right: 2.3rem;
 }
 
 .header .navbar a:hover,
@@ -80,7 +93,7 @@ section{
 
 .header .navbar a{
     text-transform: none;
-    margin: 0 2.7rem;
+    margin: 0 2.2rem;
     font-size: 1.1rem;
     color: #cecece;
 }
@@ -154,8 +167,11 @@ section{
 }
 
 .home2 .box-container {
-    width: 100%;
-    height: auto;
+    background: url(../images/about-1.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 88vh;
 }
 
 .home2 .box-container img{
@@ -218,6 +234,7 @@ section{
     background-size: cover;
     background-position: center;
     height: 62.4rem;
+    margin-top: 1.5rem;
 }
 
 .MAC .box-container .content{
@@ -260,6 +277,344 @@ section{
     padding-left: .3rem;
 }
 
+.touch .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.2rem;
+}
+
+.touch .box-container .box{
+    background: url(../images/airpods.jpg) no-repeat;
+    text-align: center;
+    background-size:auto;
+    background-size:initial;
+    background-position: center;
+    min-height: 88vh;
+    overflow: visible;
+}
+
+.touch .box-container .box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.touch .box-container .box .content h4{
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #444;
+}
+
+.touch .box-container .box .content h5{
+    font-size: 1.8rem;
+    line-height: 1.2381;
+    font-weight: 400;
+    letter-spacing: .016em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: .4rem;
+}
+
+.touch .box-container .box .content p{
+    margin-top: .6rem;
+    color: #86868b;
+    text-align: center;
+    margin-top: .4rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.touch .box-container .box .link .p-first{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: #06c;
+    text-transform: none;
+}
+
+.touch .box-container .box .link .p-first:hover{
+    text-decoration: underline;
+}
+
+
+.touch .box-container .box-second{
+    background: url(../images/watch.jpg) no-repeat;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 88vh;
+}
+
+.touch .box-container .box-second span{
+    margin-top: 3.5rem;
+    font-size: 1.3rem;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #c04c06;
+    display: block;
+}
+
+.touch .box-container .box-second .image img{
+    margin-top: 1.5rem;
+}
+
+.touch .box-container .box-second h3{
+    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 1.3;
+    font-weight: 500;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: .4rem;
+}
+
+.touch .box-container .box-second .link{
+    margin: 1.4rem 0px 2.8rem;
+}
+
+.touch .box-container .box-second .link .p-first,
+.touch .box-container .box-second .link .p-second{
+    font-size: 1.6rem;
+    color: #06c;
+    text-transform: none;
+}
+
+.touch .box-container .box-second .link .p-first:hover,
+.touch .box-container .box-second .link .p-second:hover{
+    text-decoration: underline;
+}
+
+.touch .box-container .box-second .link .p-second{
+    margin-left: 4rem;
+}
+
+.touch .box-container .box-second .link i{
+    color: #2997ff;
+    font-size: 1.4rem;
+    padding-left: .3rem;
+}
+
+/* tablet */
+
+.tablet .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1rem;
+}
+
+.tablet .box-container .box{
+    background: url(../images/ipad.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 88vh;
+}
+
+.tablet .box-container .box .image{
+    margin-top: 6rem;
+}
+
+.tablet .box-container .box h5{
+    font-size: 2rem;
+    line-height: 1.2381;
+    font-weight: 400;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 1rem;
+}
+
+.tablet .box-container .box .link{
+    margin: 1.4rem 0px 2.8rem;
+}
+
+.tablet .box-container .box .link .p-first,
+.tablet .box-container .box .link .p-second{
+    font-size: 1.6rem;
+    color: #06c;
+    text-transform: none;
+}
+
+.tablet .box-container .box .link .p-first:hover,
+.tablet .box-container .box .link .p-second:hover{
+    text-decoration: underline;
+}
+
+.tablet .box-container .box .link .p-second{
+    margin-left: 4rem;
+}
+
+.tablet .box-container .box .link i{
+    color: #2997ff;
+    font-size: 1.4rem;
+    padding-left: .3rem;
+}
+
+.tablet .box-container .box-second{
+    background: url(../images/table-tablet.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 88vh;
+}
+
+.tablet .box-container .box-second .content h4{
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 550;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 5.3rem;
+    text-transform: none;
+}
+
+.tablet .box-container .box-second .content h5{
+    font-size: 2rem;
+    line-height: 1.2381;
+    font-weight: 400;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 1rem;
+}
+
+.tablet .box-container .box-second .link{
+    margin: 1.4rem 0px 2.8rem;
+}
+
+.tablet .box-container .box-second .link .p-first,
+.tablet .box-container .box-second .link .p-second{
+    font-size: 1.6rem;
+    color: #06c;
+    text-transform: none;
+}
+
+.tablet .box-container .box-second .link .p-first:hover,
+.tablet .box-container .box-second .link .p-second:hover{
+    text-decoration: underline;
+}
+
+.tablet .box-container .box-second .link .p-second{
+    margin-left: 4rem;
+}
+
+.tablet .box-container .box-second .link i{
+    color: #2997ff;
+    font-size: 1.4rem;
+    padding-left: .3rem;
+}
+
+/* store apple */
+.store .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1rem;
+}
+
+.store .box-container .box{
+    background: url(../images/app-store.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 88vh;
+}
+
+.store .box-container .box .image{
+    margin-top: 6rem;
+}
+
+.store .box-container .box h5{
+    margin: auto;
+    max-width: 36rem;
+    font-size: 2rem;
+    line-height: 1.2381;
+    font-weight: 400;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.store .box-container .box .link{
+    margin: 1.4rem 0px 2.8rem;
+}
+
+.store .box-container .box .link .first{
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: none;
+}
+
+.store .box-container .box .link .first:hover{
+    text-decoration: underline;
+}
+
+.store .box-container .box .link i{
+    color: #fff;
+    font-size: 1.4rem;
+    padding-left: .3rem;
+}
+
+.store .box-container .box-second{
+    background: url(../images/music_awards.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 88vh;
+}
+
+.store .box-container .box-second .image{
+    margin-top: 6rem;
+}
+
+.store .box-container .box-second h5{
+    font-size: 2rem;
+    line-height: 1.2381;
+    font-weight: 400;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 1rem;
+}
+
+.store .box-container .box-second .link{
+    margin: 1.4rem 0px 2.8rem;
+}
+
+.store .box-container .box-second .link .p-first,
+.store .box-container .box-second .link .p-second{
+    font-size: 1.6rem;
+    color: #06c;
+    text-transform: none;
+}
+
+.store .box-container .box-second .link .p-first:hover,
+.store .box-container .box-second .link .p-second:hover{
+    text-decoration: underline;
+}
+
+.store .box-container .box-second .link .p-second{
+    margin-left: 4rem;
+}
+
+.store .box-container .box-second .link i{
+    color: #2997ff;
+    font-size: 1.4rem;
+    padding-left: .3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* responsive */
@@ -271,9 +626,9 @@ section{
     .header {
       padding: 0 2rem;
     }
-    section {
-      padding: 3rem 2rem;
-    }
+    /* section {
+      padding: 3rem 0;
+    } */
     .home .slide {
       padding: 2rem 5%;
     }
@@ -285,14 +640,16 @@ section{
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 865px) {
     #menu-btn {
       display: inline-block;
+      margin-right: 2rem;
     }
 
     .header .logo{
         justify-content: center;
         margin: auto;
+        font-size: 2.3rem;
     }
 
     .header .icons-sd{
@@ -300,20 +657,21 @@ section{
     }
    
     .header {
-      padding: 2rem;
+        line-height: 2.3;
+        /* padding: 2rem; */
     }
+
     .header .navbar {
-      position: absolute;
-      top: 99%;
-      left: 0;
-      right: 0;
-      background: #000;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #000;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
+
     .header .navbar.active {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     .header .navbar a {
       display: block;
