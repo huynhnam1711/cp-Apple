@@ -41,7 +41,7 @@ body{
 }
 
 section{
-    padding: 1rem 1% 0 1%;
+    padding: 1rem 1% ;
 }
 
 .header{
@@ -54,7 +54,7 @@ section{
     align-items: center;
     background: #111;
     margin: 0 auto;
-    padding: 0 22px;
+    padding: 0 2.2rem;
     z-index: 2;
 }
 
@@ -104,8 +104,12 @@ section{
 }
 
 .home .box-container{
-    align-items: center;
+    background: url(../images/home1.jpg) no-repeat;
     text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+    width: 100%;
 }
 
 .home .box-container .content h2{
@@ -151,14 +155,14 @@ section{
     padding-left: .3rem;
 }
 
-.home .image{
+/* .home .image{
     min-height: 60vh;
     width: 57rem;
     background-size: cover !important;
     background-position:top ;
     align-items: center;
     margin: auto;
-}
+} */
 
 .home2{
     background: #35283c;
@@ -167,11 +171,12 @@ section{
 }
 
 .home2 .box-container {
-    background: url(../images/about-1.jpg);
+    background: url(../images/about-1.jpg) no-repeat;
     text-align: center;
     background-size: cover;
     background-position: center;
     min-height: 88vh;
+    width: 100%;
 }
 
 .home2 .box-container img{
@@ -227,6 +232,68 @@ section{
     padding-left: .3rem;
 }
 
+/* box-cotainer-second */
+.home2 .box-container-second {
+    background: url(../images/iphone13.jpg) no-repeat;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: none;
+}
+
+.home2 .box-container-second .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.home2 .box-container-second .content h2{
+    padding-top: 8rem;
+    text-transform: none;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.home2 .box-container-second .content h3{
+    color: #fec2eb;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    font-weight: 400;
+}
+
+.home2 .box-container-second .content .link{
+    margin: 1.4rem 0px 2.8rem;
+}
+
+.home2 .box-container-second .content .link .p-first,
+.home2 .box-container-second .content .link .p-second{
+    font-size: 1.9rem;
+    color: #06c;
+    text-transform: none;
+}
+
+.home2 .box-container-second .content .link .p-first:hover,
+.home2 .box-container-second .content .link .p-second:hover{
+    text-decoration: underline;
+}
+
+.home2 .box-container-second .content .link .p-second{
+    /* margin-left: 4rem; */
+    margin-left: 1.5rem;
+}
+
+.home2 .box-container-second .content .link i{
+    color: #2997ff;
+    font-size: 1.4rem;
+    padding-left: .3rem;
+}
+
+/*  */
 .MAC .box-container{
     background: #fbfbfd;
     text-align: center;
@@ -601,9 +668,147 @@ section{
     padding-left: .3rem;
 }
 
+/* footer */
+
+.footer{
+    background: #f5f5f7;
+}
+
+.footer .row{
+    margin: auto;
+    width: 98rem;
+    height: 100%;
+}
 
 
+.footer .row .section-content {
+    display: block;
+    margin-top: 2rem;
+}
 
+.footer .row .section-content ul li{
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #888;
+    font-weight: 400;
+    list-style: none;
+    text-transform: none;
+    letter-spacing: .02rem;
+    border-bottom: .1rem solid #d2d2d7;
+    padding-bottom: 1.5rem;
+}
+
+.footer .row .section-content ul li a{
+    text-transform: none;
+    color: #888;
+}
+
+.footer .row .section-content ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer .row .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+.footer .row .box-container .box h3{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.footer .row .box-container .box a{
+    display: block;
+    font-size: 1.1rem;
+    text-transform: none;
+    padding-top: .8rem;
+    color: #777;
+}
+
+.footer .row .box-container .box a:hover{
+    text-decoration: underline;
+}
+.footer .row .box-container .box .box-content{
+    padding-top: 2.4rem;
+}
+
+.footer .row .section-content-second{
+    padding-top: 3.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer .row .section-content-second .footer-shop{
+    margin-bottom: .7rem;
+    padding-bottom: .8rem;
+    border-bottom: .1rem solid #d2d2d7;
+}
+
+.footer .row .section-content-second .footer-shop span{
+    font-size: 1.08rem;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: .01em;
+    font-weight: 600;
+    margin-right: 2rem;
+    text-transform: none;
+    color: #8c8c91;
+}
+
+.footer .row .section-content-second .footer-shop span a{
+    color: #06c;
+    letter-spacing: .01em;
+}
+
+.footer .row .section-content-second .footer-shop span a:hover{
+    text-decoration: underline;
+}
+
+.footer .row .section-content-second .made-power-by{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+}
+
+.footer .row .section-content-second .made-power-by .legal-link{
+    font-size: 1.1rem;
+    text-transform: none;
+    color: #888;
+    letter-spacing: .04rem;
+}
+
+.footer .row .section-content-second .made-power-by .legal-link-second a{
+    font-size: 1.05rem;
+    text-transform: none;
+    color: #888;
+    letter-spacing: .04rem;
+    border-right: 1px solid #999;
+    margin-right: 7px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.footer .row .section-content-second .made-power-by .legal-link-second a:hover{
+    text-decoration: underline;
+}
+
+.footer .row .section-content-second .made-power-by .legal-link-second .legal-link-second-none{
+    border: none;
+}
+
+.footer .row .section-content-second .made-power-by .local-link a{
+    float: right;
+    color: #333;
+}
+
+.footer .row .section-content-second .made-power-by .local-link a:hover{
+    text-decoration: underline;
+}
 
 
 
@@ -638,6 +843,15 @@ section{
     .home .slide .content h3 {
       font-size: 4rem;
     }
+    
+    .home2 .box-container {
+        display: none;
+    }
+
+    .home2 .box-container-second {
+        display: block;
+    }
+
   }
   
   @media (max-width: 865px) {
